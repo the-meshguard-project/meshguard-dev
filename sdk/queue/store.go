@@ -1,6 +1,6 @@
 package queue
 
-import "github.com/meshguard/sdk/types"
+import "github.com/meshguard/sdk/sdk/types"
 
 // EventStore defines the interface for event persistence
 type EventStore interface {

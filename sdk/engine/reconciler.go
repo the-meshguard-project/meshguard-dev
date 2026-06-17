@@ -5,8 +5,8 @@ import (
 	"sync"
 	"time"
 
-	"github.com/meshguard/sdk/queue"
-	"github.com/meshguard/sdk/types"
+	"github.com/meshguard/sdk/sdk/queue"
+	"github.com/meshguard/sdk/sdk/types"
 )
 
 // Reconciler handles event replay and settlement after network recovery

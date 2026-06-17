@@ -2,11 +2,10 @@ package queue
 
 import (
 	"database/sql"
-	"encoding/json"
 	"fmt"
 
 	_ "github.com/mattn/go-sqlite3"
-	"github.com/meshguard/sdk/types"
+	"github.com/meshguard/sdk/sdk/types"
 )
 
 // SQLiteStore implements EventStore using SQLite with WAL mode
