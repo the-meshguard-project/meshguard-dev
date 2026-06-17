@@ -84,9 +84,20 @@ func (r *Reconciler) Reconcile() (*types.ReconciliationSummary, error) {
 }
 
 func (r *Reconciler) processEvent(event *types.MeshGuardEvent) error {
-	// Transition to reconciling state
+	// Transition to reconciling state (from pending or failed)
+	if event.Status == types.EventStatusPending {
+		// Pending events should go through processing first
+		if !event.Transition(types.EventStatusProcessing) {
+			return fmt.Errorf("invalid state transition from %s to processing", event.Status)
+		}
+		if err := r.store.Update(event); err != nil {
+			return err
+		}
+	}
+
+	// Now transition to reconciling
 	if !event.Transition(types.EventStatusReconciling) {
-		return fmt.Errorf("invalid state transition from %s", event.Status)
+		return fmt.Errorf("invalid state transition from %s to reconciling", event.Status)
 	}
 
 	if err := r.store.Update(event); err != nil {
