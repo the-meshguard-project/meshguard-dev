@@ -4,7 +4,6 @@ import (
 	"testing"
 	"time"
 
-	"github.com/meshguard/sdk/sdk/queue"
 	"github.com/meshguard/sdk/sdk/types"
 )
 
