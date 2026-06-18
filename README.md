@@ -101,7 +101,7 @@ go run sdk/examples/alice_bob_demo.go
 
 ---
 
-## 🏗️ Architecture
+##  Architecture
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
@@ -167,7 +167,7 @@ go run sdk/examples/alice_bob_demo.go
 
 ---
 
-## 📦 Installation
+## Installation
 
 ### Requirements
 
@@ -191,7 +191,7 @@ go test ./sdk/...
 
 ---
 
-## 💡 Usage Examples
+## Usage Examples
 
 ### Example 1: Basic Event Queuing
 
@@ -269,7 +269,7 @@ event.Transition(types.EventStatusPending)     // ✗ false
 
 ---
 
-## 🧪 Running Tests
+##  Running Tests
 
 ### Run All Tests
 
