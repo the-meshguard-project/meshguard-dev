@@ -1,0 +1,29 @@
+## Summary
+Implements the core SDK for MeshGuard transaction coordination system with event queuing and reconciliation.
+
+## Components Added
+
+### sdk/types
+- Event state machine with validated transitions
+- Atomic sequence clock for event ordering
+- Reconciliation summary tracking
+
+### sdk/queue
+- EventStore interface for persistence
+- SQLiteStore implementation with WAL mode
+- Pure Go SQLite driver (no CGO required)
+
+### sdk/engine
+- Reconciler for event replay after network recovery
+- Pause/Resume controls
+- Atomic event processing with proper state transitions
+
+## Test Coverage
+- types: 100% coverage
+- queue: 87.2% coverage (includes SQLite integration tests)
+- engine: 77.5% coverage
+
+## Key Changes
+- Used modernc.org/sqlite (pure Go) instead of mattn/go-sqlite3 (CGO)
+- All tests pass on Windows without GCC compiler
+- Comprehensive unit and integration tests included
