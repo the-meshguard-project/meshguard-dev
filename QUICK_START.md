@@ -194,13 +194,13 @@ kill <pid>
 
 ## What Gets Demonstrated
 
-✅ **Network Partition Handling** - Transactions queue locally  
-✅ **SQLite WAL Persistence** - Survives crashes  
-✅ **Event State Machine** - Valid transitions enforced  
-✅ **Atomic Sequencing** - Correct replay order  
-✅ **Reconciliation** - Automatic settlement after recovery  
-✅ **Bitcoin Integration** - Real RPC calls and transactions  
-✅ **Pure Go** - No CGO required, works on Windows  
+ **Network Partition Handling** - Transactions queue locally  
+ **SQLite WAL Persistence** - Survives crashes  
+ **Event State Machine** - Valid transitions enforced  
+ **Atomic Sequencing** - Correct replay order  
+ **Reconciliation** - Automatic settlement after recovery  
+ **Bitcoin Integration** - Real RPC calls and transactions  
+ **Pure Go** - No CGO required, works on Windows  
 
 ## Next Steps
 
@@ -227,9 +227,9 @@ kill <pid>
 
 ## Get Help
 
-- 📖 Read the documentation in `sdk/examples/`
-- 🐛 Check test files for usage examples
-- 💬 Open an issue on GitHub
+-  Read the documentation in `sdk/examples/`
+-  Check test files for usage examples
+-  Open an issue on GitHub
 
 ## Contributing
 
