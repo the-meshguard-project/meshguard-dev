@@ -11,7 +11,7 @@ MeshGuard is a transaction coordination system that ensures Bitcoin payments sur
 
 ---
 
-## 🚀 Quick Start
+##  Quick Start
 
 ### Option 1: Run Demo (No Bitcoin Core Required)
 
@@ -72,7 +72,7 @@ go run sdk/examples/alice_bob_demo.go
 
 ---
 
-## 📋 Table of Contents
+##  Table of Contents
 
 - [Features](#-features)
 - [Architecture](#-architecture)
@@ -87,7 +87,7 @@ go run sdk/examples/alice_bob_demo.go
 
 ---
 
-## ✨ Features
+##  Features
 
 - **Network Partition Resilience** - Transactions survive connectivity failures
 - **SQLite WAL Persistence** - Durable local queue with Write-Ahead Logging
@@ -314,10 +314,10 @@ go test ./sdk/engine/... -run TestReconcile -v
 
 | Package | Coverage | Tests | Status |
 |---------|----------|-------|--------|
-| `sdk/types` | 100.0% | 4 | ✅ PASS |
-| `sdk/queue` | 87.2% | 4 | ✅ PASS |
-| `sdk/engine` | 77.5% | 4 | ✅ PASS |
-| **Average** | **88.2%** | **12** | **✅ ALL PASS** |
+| `sdk/types` | 100.0% | 4 |  PASS |
+| `sdk/queue` | 87.2% | 4 | PASS |
+| `sdk/engine` | 77.5% | 4 | PASS |
+| **Average** | **88.2%** | **12** | ** ALL PASS** |
 
 ### Detailed Results
 
@@ -348,14 +348,14 @@ PASS
 --- PASS: TestReconcileWithPendingEvents (0.00s)
 PASS
 
-✅ All tests passing
+ All tests passing
 ```
 
 See [detailed test results](./sdk/examples/TEST_RESULTS.md) for more information.
 
 ---
 
-## 📚 Documentation
+##  Documentation
 
 ### Core Documentation
 
@@ -377,7 +377,7 @@ go doc github.com/meshguard/sdk/sdk/engine
 
 ---
 
-## 📖 API Reference
+##  API Reference
 
 ### Types Package
 
@@ -401,7 +401,7 @@ type MeshGuardEvent struct {
 const (
     EventStatusPending     EventStatus = "pending"
     EventStatusProcessing  EventStatus = "processing"
-    EventStatusCompleted   EventStatus = "completed"
+    EventStatusCompleted   EventStatus = "completed"aa
     EventStatusFailed      EventStatus = "failed"
     EventStatusReconciling EventStatus = "reconciling"
 )
@@ -446,7 +446,7 @@ func (r *Reconciler) Reconcile() (*types.ReconciliationSummary, error)
 
 ---
 
-## 🐛 Troubleshooting
+##  Troubleshooting
 
 ### Bitcoin Core Not Found
 
@@ -521,7 +521,7 @@ go test ./sdk/... -v
 
 ---
 
-## 🤝 Contributing
+##  Contributing
 
 Contributions welcome! Please follow these steps:
 
@@ -557,7 +557,7 @@ golangci-lint run
 
 ---
 
-## 📄 License
+##  License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
@@ -571,7 +571,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-## 📞 Contact & Support
+##  Contact & Support
 
 - **Issues**: [GitHub Issues](https://github.com/the-meshguard-project/meshguard-dev/issues)
 - **Documentation**: [Full Docs](./sdk/examples/)
@@ -579,7 +579,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-## 🗺️ Roadmap
+##  Roadmap
 
 - [ ] Lightning Network integration (LND driver)
 - [ ] REST API server
@@ -593,5 +593,5 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-**MeshGuard SDK** - When networks fail, transactions shouldn't. ⚡
+**MeshGuard SDK** - When networks fail, transactions shouldn't. 
 
